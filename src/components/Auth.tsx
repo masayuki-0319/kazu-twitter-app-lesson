@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import styles from "./Auth.module.css";
-import { useDispatch } from "react-redux";
-import { auth, provider, storage } from "../firebase";
+import { auth, provider } from "../firebase";
 
 import {
   Avatar,
@@ -12,16 +11,10 @@ import {
   Grid,
   Typography,
   makeStyles,
-  Modal,
-  IconButton,
-  Box,
 } from "@material-ui/core";
 
-import SendIcon from "@material-ui/icons/Send";
-import CameraIcon from "@material-ui/icons/Camera";
 import EmailIcon from "@material-ui/icons/Email";
 import LockOutlinedIcon from "@material-ui/icons/LockOutlined";
-import AccountCircleIcon from "@material-ui/icons/AccountCircle";
 
 const useStyles = makeStyles((theme) => ({
   root: {
